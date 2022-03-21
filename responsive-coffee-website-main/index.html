@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/responsive-coffee-website-main/assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/responsive-coffee-website-main/assets/css/styles.css">
+
+        <title>Coffee website</title>
+    </head>
+    <body>
+        <!--==================== LOADER ====================-->
+        <div class="load" id="load">
+            <img src="/responsive-coffee-website-main/assets/img/loadcoffee.gif" alt="" class="load__gif">
+        </div>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="/responsive-coffee-website-main/assets/img/logo.png" alt="" class="nav__logo-img">
+                    Buen Café.
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link" active-link>Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#premium" class="nav__link">Premium</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#blog" class="nav__link">Blog</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    
+                </div>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main>
+            <!--==================== HOME ====================-->
+            <section class="home grid" id="home">
+                <div class="home__container">
+                    <div class="home__content container">
+                        <h1 class="home__title">
+                            Elige tu Café Favorito y disfruta<span>.</span>
+                        </h1>
+                        <p class="home__description">El mejor café del país!</p>
+
+                        <div class="home__data">
+                            <div class="home__data-group">
+                                <h2 class="home__data-number">120K</h2>
+                                <h3 class="home__data-title">Testimonios</h3>
+                                <p class="home__data-description">
+                                    Ellos creen en la calidad de nuestro producto.
+                                </p>
+                            </div>
+
+                            <div class="home__data-group">
+                                <h2 class="home__data-number">340+</h2>
+                                <h3 class="home__data-title">Producto Exclusivo</h3>
+                                <p class="home__data-description">
+                                    Preparación premium con los mejores y selectos ingredientes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#specialty">
+                            <img src="/responsive-coffee-website-main/assets/img/scroll.png" alt="" class="home__scroll">
+                        </a>
+                    </div>
+                </div>
+
+                <img src="/responsive-coffee-website-main/assets/img/home.png" alt="" class="home__img">
+            </section>
+
+            <!--==================== ESPECIALTY ====================-->
+            <div class="specialty section container" id="specialty">
+                <div class="specialty__container">
+                    <div class="specialty__box">
+                        <h2 class="section__title">
+                            El Café con el toque especial que te hace feliz!
+                        </h2>
+                        <div>
+                            <a href="#" class="button specialty__button">Ver mas</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="specialty__category">
+                    <div class="specialty__group specialty__line">
+                        <img src="/responsive-coffee-website-main/assets/img/specialty1.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Café Seleccionado</h3>
+                        <p class="specialty__description">
+                            Seleccionamos el mejor Café Premium del país, para un sabor exquisito al paladar.
+                        </p>
+                    </div>
+
+                    <div class="specialty__group specialty__line">
+                        <img src="/responsive-coffee-website-main/assets/img/specialty2.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Deliciosas Galletas</h3>
+                        <p class="specialty__description">
+                            Disfruta tu Café con nuestras deliciosas galletas.
+                        </p>
+                    </div>
+
+                    <div class="specialty__group">
+                        <img src="/responsive-coffee-website-main/assets/img/specialty3.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Disfruta en Casa</h3>
+                        <p class="specialty__description">
+                            Disfruta del mejor Café, desde la comodidad de tu hogar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section" id="products">
+                <div class="products__container container">
+                    <h2 class="section__title">
+                        Elige de nuestros mejores productos
+                    </h2>
+
+                    <ul class="products__filters">
+                        <li class="products__item products__line active-product" data-filter=".delicacies">
+                            <h3 class="products__title">Nuevas Delicias</h3>
+                            <span class="products__stock">3 productos</span>
+                        </li>
+
+                        <li class="products__item products__line" data-filter=".coffee">
+                            <h3 class="products__title">Café Picante</h3>
+                            <span class="products__stock">4 productos</span>
+                        </li>
+
+                        <li class="products__item products__line" data-filter=".cake">
+                            <h3 class="products__title">Galletas y Delicias</h3>
+                            <span class="products__stock">4 productos</span>
+                        </li>
+                    </ul>
+
+                    <div class="products__content grid">
+                        <!--========= Delicias =========-->
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/delicacies1.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$2700</h2>
+                                <h3 class="products__name">Galletas</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/delicacies2.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$3500</h2>
+                                <h3 class="products__name">Croissant</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/delicacies3.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$3200</h2>
+                                <h3 class="products__name">Corazonsito</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                        <!--========= Cafes =========-->
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/coffee1.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$1700</h2>
+                                <h3 class="products__name">Café Negro</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/coffee2.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$2200</h2>
+                                <h3 class="products__name">Café Puro</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/coffee3.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$2900</h2>
+                                <h3 class="products__name">Capuccino</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/coffee4.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">3200</h2>
+                                <h3 class="products__name">Café Moka</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                        <!--========= Pasteles =========-->
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/cake1.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$3900</h2>
+                                <h3 class="products__name">Paste de Crema</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/cake2.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$4100</h2>
+                                <h3 class="products__name">Croissant de Chocolate</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/cake3.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$3500</h2>
+                                <h3 class="products__name">Pancake</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="/responsive-coffee-website-main/assets/img/cake4.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="products__price">$3750</h2>
+                                <h3 class="products__name">Pastel de Leche</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALITY ====================-->
+            <section class="quality section" id="premium">
+                <div class="quality__container container">
+                    <h2 class="section__title">
+                        Ofrecemos la mejor calidad de preparación Premium para ti!
+                    </h2>
+
+                    <div class="quality__content grid">
+                        <div class="quality__images">
+                            <img src="/responsive-coffee-website-main/assets/img/quality1.png" alt="" class="quality__img-big">
+                            <img src="/responsive-coffee-website-main/assets/img/quality2.png" alt="" class="quality__img-small">
+                        </div>
+
+                        <div class="quality__data">
+                            <h1 class="quality__title">Café Premium</h1>
+                            <h2 class="quality__price">$4500</h2>
+                            <span class="quality__special">Precio Especial</span>
+                            <p class="quality__description">
+                                Estamos encantados con nuestro café. Por eso obtienes lo mejor.
+                                café premium más la tetera fabricada en materiales resistentes, por un precio especial.
+                            </p>
+
+                            <div class="quality__buttons">
+                                <button class="button">
+                                    Comprar ahora
+                                </button>
+
+                                <a href="#" class="quality__button">
+                                    Ver mas
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== LOGOS ====================-->
+            <section class="logo section">
+                <div class="logo__container container grid">
+                    <img src="/responsive-coffee-website-main/assets/img/logocoffee1.png" alt="" class="logo__img">
+                    <img src="/responsive-coffee-website-main/assets/img/logocoffee2.png" alt="" class="logo__img">
+                    <img src="/responsive-coffee-website-main/assets/img/logocoffee3.png" alt="" class="logo__img">
+                    <img src="/responsive-coffee-website-main/assets/img/logocoffee4.png" alt="" class="logo__img">
+                    <img src="/responsive-coffee-website-main/assets/img/logocoffee5.png" alt="" class="logo__img">
+                </div>
+            </section>
+
+            <!--==================== BLOG ====================-->
+            <section class="blog section" id="blog">
+                <div class="blog__container container">
+                    <h2 class="section__title">
+                        El Blog de nuestro Cafè, estuvo en el tòpico trending esta semana
+                    </h2>
+
+                    <div class="blog__content grid">
+                        <article class="blog__card">
+                            <div class="blog__image">
+                                <img src="/responsive-coffee-website-main/assets/img/blog1.png" alt="" class="blog__img">
+                                <a href="#" class="blog__button">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+
+                            <div class="blog__data">
+                                <h2 class="blog__title">
+                                    10 Recomendaciones de nuestro Cafè
+                                </h2>
+                                <p class="blog__description">
+                                    Los blogs sobre café te ayudarán mucho e entender su preparación, su tiempo de espera, para obtener un
+                                    cafè de calidad.
+                                </p>
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>76,5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog__card">
+                            <div class="blog__image">
+                                <img src="/responsive-coffee-website-main/assets/img/blog2.png" alt="" class="blog__img">
+                                <a href="#" class="blog__button">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+
+                            <div class="blog__data">
+                                <h2 class="blog__title">
+                                    Beneficios de tomar Cafè
+                                </h2>
+                                <p class="blog__description">
+                                    El cafè es rico en antioxidantes, activa la mente, puede proteger contra el cancer, ictus y enfermedades coronarias, combate el Alzheimer y el Parkinson entre otras.
+                                </p>
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>356,5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Buen Cafè.</h1>
+
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <p class="footer__description">
+                            Suscribete a nuestras noticias
+                        </p>
+
+                        <div class="footer__newsletter">
+                            <input type="email" placeholder="Tu email" class="footer__input">
+                            <button class="footer__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle"></h2>
+                        <p class="footer__information">
+                            
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle"></h2>
+                        <p class="footer__information">
+
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Direccion</h2>
+                        <p class="footer__information">
+                            Av 76 Edificio Plaza <br>
+                            Bogotà, Chapinero, Colombia
+                        </p>
+
+                        <h2 class="footer__flag">🏁</h2>
+
+                        <!-- <img src="/responsive-coffee-website-main/assets/img/footerflag.png" alt="" class="footer__flag"> -->
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Contacto</h2>
+                        <p class="footer__information">
+                            +573130990356 <br>
+                            buencafe@email.com
+                        </p>
+                        <h2 class="footer__flag">📞</h2>
+                    </div>
+
+                    <div class="footer__data atencion">
+                        <h2 class="footer__subtitle">Atenciòn</h2>
+                        <p class="footer__information">
+                            Lunes - Sàbado <br>
+                            9AM - 10PM
+                        </p>
+
+                        <h2 class="footer__flag">☕</h2>
+                    </div>
+
+
+                </div>
+
+                <div class="footer__group">
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="https://wa.me/+573133990387?text=Me%20interesa%20saber%20mas" class="footer__social-link" target="_blank">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </ul>
+
+                    <span class="footer__copy">
+                        &#169; Zaky Up. Todos los derechos reservados
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="/responsive-coffee-website-main/assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/responsive-coffee-website-main/assets/js/main.js"></script>
+    </body>
+</html>
